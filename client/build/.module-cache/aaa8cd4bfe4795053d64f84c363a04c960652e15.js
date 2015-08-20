@@ -55,7 +55,7 @@ var BABHeader = React.createClass({displayName: "BABHeader",
 	render: function() {
 		return(
 			React.createElement("header", {id: "navBar"}, 
-				React.createElement("img", {width: "100", src: "/public/images/logo2.png"}), 
+				React.createElement("img", {width: "100", src: "/public/images/logo2.svg"}), 
 				React.createElement(BABNavBarItems, {currentURL: this.props.currentURL})
 			)
 		);
