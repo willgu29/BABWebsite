@@ -5,6 +5,7 @@ var express = require('express'),
 	LocalStrategy = require('passport-local').Strategy,
 	session = require('express-session'),
 	config = require('./config.json'),
+	hbs = require('hbs'),
 	User = require('./models/User.js');
 
 var app = express();
@@ -18,7 +19,7 @@ app.use(session({secret: 'baeMaxLoving'}))
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static('public'));
+app.use("/public", express.static(__dirname + '/public'));
 app.use("/client/build", express.static(__dirname + '/client/build'));
 
 app.listen(config.PORT || 3000);
@@ -30,11 +31,29 @@ app.listen(config.PORT || 3000);
 
 app.get("/", function (req, res) {
 	console.log('/ GET');
-	if (!req.user) {
-		res.render('landingPage');
-	} else {
-		res.render('index');
-	}
+	
+	res.render('index', {layout: "/layouts/main"});
+	
+});
+
+app.get("/about", function (req, res) {
+	console.log("/about GET");
+	res.render('about', {layout: "/layouts/main"});
+});
+
+app.get("/links", function (req, res) {
+	console.log("/links GET");
+	res.render('links', {layout: "/layouts/main"});
+});
+
+app.get("/members", function (req, res) {
+	console.log("/members GET");
+	res.render('members', {layout: "/layouts/main"});
+});
+
+app.get("/faq", function (req, res) {
+	console.log("/faq GET");
+	res.render('faq', {layout: "/layouts/main"});
 });
 
 
