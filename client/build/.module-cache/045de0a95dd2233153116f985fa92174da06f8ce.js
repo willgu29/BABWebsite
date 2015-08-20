@@ -6,6 +6,7 @@ var ulStyle = {
 }
 var liStyle = {
     display: "inline",
+    margin: "10",
     padding: "15"
 }
 

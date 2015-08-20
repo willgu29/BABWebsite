@@ -1,12 +1,10 @@
 var ulStyle = {
-    display: "inline",
     listStyleType: "none",
     margin: "0",
     padding: "0"
 }
 var liStyle = {
-    display: "inline",
-    padding: "15"
+    display: "inline"
 }
 
 var liStyleSelected = {

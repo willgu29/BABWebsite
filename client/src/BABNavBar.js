@@ -1,10 +1,12 @@
 var ulStyle = {
+    display: "inline",
     listStyleType: "none",
     margin: "0",
     padding: "0"
 }
 var liStyle = {
-    display: "inline"
+    display: "inline",
+    padding: "15"
 }
 
 var liStyleSelected = {
@@ -52,10 +54,10 @@ var BABHeader = React.createClass({
 
 	render: function() {
 		return(
-			<div id="navBar">
+			<header id="navBar">
 				<img width="100" src="/public/images/logo2.png" />
 				<BABNavBarItems currentURL={this.props.currentURL} />
-			</div>
+			</header>
 		);
 	}
 });

@@ -1,17 +1,15 @@
 var ulStyle = {
-    display: "inline",
-    listStyleType: "none",
-    margin: "0",
-    padding: "0"
+    // listStyleType: "none",
+    // margin: "0",
+    // padding: "0"
 }
 var liStyle = {
-    display: "inline",
-    padding: "15"
+    // display: "inline"
 }
 
 var liStyleSelected = {
-	display: "inline",
-	backgroundColor: "green"
+	// display: "inline",
+	// backgroundColor: "green"
 }
 
 var BABNavBarItems = React.createClass({displayName: "BABNavBarItems",
@@ -54,7 +52,7 @@ var BABHeader = React.createClass({displayName: "BABHeader",
 
 	render: function() {
 		return(
-			React.createElement("header", {id: "navBar"}, 
+			React.createElement("div", {id: "navBar"}, 
 				React.createElement("img", {width: "100", src: "/public/images/logo2.png"}), 
 				React.createElement(BABNavBarItems, {currentURL: this.props.currentURL})
 			)
