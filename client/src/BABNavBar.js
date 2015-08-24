@@ -37,7 +37,6 @@ var BABNavBarItems = React.createClass({
 			<ul style={ulStyle}>
 				<li style={style1}><a href="/">Home</a></li>
 				<li style={style2}><a href="/about">About</a></li>
-				// <li style={style3}><a href="/links">Links</a></li>
 				<li style={style4}><a href="/members">Members</a></li>
 				<li style={style5}><a href="/faq">FAQ</a></li>
 				<li style={liStyle}><a target="_blank" href="http://facebook.com/groups/bruinappbuilders">FB Group</a></li>
@@ -49,6 +48,8 @@ var BABNavBarItems = React.createClass({
 	}
 
 });
+				//<li style={style3}><a href="/links">Links</a></li>
+
 
 var BABHeader = React.createClass({
 
