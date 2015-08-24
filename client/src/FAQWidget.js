@@ -14,6 +14,7 @@ in the expression of humanity.";
 var whatDoes = "BAB is a community and resource to help you towards your goals. We do this by \
 offering events, mentorship, and opportunities to meet people who can help guide you in the right \
 direction. Ask individual members what they're up to!";
+var whenDoes = "Join our mailing list and check our FB group for event reminders and details!"
 var beginners = "Absolutely. The only requirements are to be proactive, share generously, and \
 express yourself.";
 var isCoders = "No. BAB is for everyone who wants to learn, to do, and create.";
@@ -30,6 +31,7 @@ var contentData = {
 
 	"whatIs" : whatIs,
 	"whatDoes" : whatDoes,
+	"whenDoes" : whenDoes,
 	"beginners" : beginners,
 	"isCoders" : isCoders,
 	"igrouply" : igrouply,
@@ -62,6 +64,7 @@ var FAQWidget = React.createClass({
 				<ul>
 					<li><a onClick={this.handleClick.bind(this, "whatIs")} >What is BAB?</a></li>
 					<li><a onClick={this.handleClick.bind(this, "whatDoes")}>What does BAB do?</a></li>
+					<li><a onClick={this.handleClick.bind(this, "whenDoes")}>When does BAB meet?</a></li>
 					<li><a onClick={this.handleClick.bind(this, "beginners")}>Does BAB accept beginners?</a></li>
 					<li><a onClick={this.handleClick.bind(this, "isCoders")}>Is BAB just for coders?</a></li>
 					<li><a onClick={this.handleClick.bind(this, "igrouply")}>What is iGrouply.com?</a></li>
