@@ -44,12 +44,21 @@ header h1, h5 {
     text-align: center;
 }
 
+h1#express {
+    font-style: oblique;
+    font-size: 100px;
+    padding: 120px 0px 0px 0px;
+    color: black;
+    text-align: center;
+
+}
+
 header h1 {
     margin-bottom: -10px;
 }
 
 .jumbotron {
-    background: url("../Images/iphone_img.jpg") no-repeat center center fixed;
+    background: url("../images/clouds.png") no-repeat center center fixed;
     background-size: cover;
     height: 500px;
     margin-top: -10px;
