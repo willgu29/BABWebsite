@@ -7,12 +7,11 @@ var ulStyle = {
 var liStyle = {
     display: "inline",
     padding: "15",
-    color: "grey"
 }
 
 var liStyleSelected = {
-	padding: "15",
 	display: "inline",
+	textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
 	color: "black"
 
 

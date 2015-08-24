@@ -13,7 +13,8 @@ var liStyle = {
 var liStyleSelected = {
 	padding: "15",
 	display: "inline",
-	color: "black"
+	//textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
+	color: "white"
 
 
 }

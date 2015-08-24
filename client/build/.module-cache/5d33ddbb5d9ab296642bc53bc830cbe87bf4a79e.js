@@ -7,12 +7,11 @@ var ulStyle = {
 var liStyle = {
     display: "inline",
     padding: "15",
-    color: "grey"
 }
 
 var liStyleSelected = {
-	padding: "15",
 	display: "inline",
+	textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
 	color: "black"
 
 
@@ -43,13 +42,13 @@ var BABNavBarItems = React.createClass({displayName: "BABNavBarItems",
 		}
 		return(
 			React.createElement("ul", {style: ulStyle}, 
-				React.createElement("li", {style: style1}, React.createElement("a", {style: aStyle, href: "/"}, "Home")), 
-				React.createElement("li", {style: style2}, React.createElement("a", {style: aStyle, href: "/about"}, "About")), 
-				React.createElement("li", {style: style4}, React.createElement("a", {style: aStyle, href: "/members"}, "Members")), 
-				React.createElement("li", {style: style5}, React.createElement("a", {style: aStyle, href: "/faq"}, "FAQ")), 
-				React.createElement("li", {style: liStyle}, React.createElement("a", {style: aStyle, target: "_blank", href: "http://facebook.com/groups/bruinappbuilders"}, "FB Group")), 
-				React.createElement("li", {style: liStyle}, React.createElement("a", {style: aStyle, target: "_blank", href: "http://bruinappbuilders.us10.list-manage1.com/subscribe?u=92195b3bc7dd1b9f8be465521&id=5821f555c7"}, "Mailing List")), 
-				React.createElement("li", {style: liStyle}, React.createElement("a", {style: aStyle, target: "_blank", href: "mailto:info@bruinappbuilders.com"}, "Contact"))
+				React.createElement("li", {style: style1}, React.createElement("a", {stlye: aStyle, href: "/"}, "Home")), 
+				React.createElement("li", {style: style2}, React.createElement("a", {href: "/about"}, "About")), 
+				React.createElement("li", {style: style4}, React.createElement("a", {href: "/members"}, "Members")), 
+				React.createElement("li", {style: style5}, React.createElement("a", {href: "/faq"}, "FAQ")), 
+				React.createElement("li", {style: liStyle}, React.createElement("a", {target: "_blank", href: "http://facebook.com/groups/bruinappbuilders"}, "FB Group")), 
+				React.createElement("li", {style: liStyle}, React.createElement("a", {target: "_blank", href: "http://bruinappbuilders.us10.list-manage1.com/subscribe?u=92195b3bc7dd1b9f8be465521&id=5821f555c7"}, "Mailing List")), 
+				React.createElement("li", {style: liStyle}, React.createElement("a", {target: "_blank", href: "mailto:info@bruinappbuilders.com"}, "Contact"))
 
 			)
 		);
