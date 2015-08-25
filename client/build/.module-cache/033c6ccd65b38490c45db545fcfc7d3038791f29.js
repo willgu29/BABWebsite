@@ -11,7 +11,7 @@ We welcome all skills levels and encourage bringing value to the people and comm
 \
 Coders, graphic designers, leaders, dancers, artists, are all are welcome to participate \
 in the expression of humanity.";
-var whatDoes = "BAB is a community that strives to help you towards your goals. We do this by \
+var whatDoes = "BAB is a community and resource to help you towards your goals. We do this by \
 offering events, mentorship, and opportunities to meet people who can help guide you in the right \
 direction. Ask individual members what they're up to!";
 var whenDoes = "Join our mailing list and check our FB group for event reminders and details!"
@@ -41,16 +41,16 @@ var contentData = {
 };
 
 
-var DescriptionView = React.createClass({
+var DescriptionView = React.createClass({displayName: "DescriptionView",
 
 	render: function() {
 		return(
-			<p>{this.props.content}</p>
+			React.createElement("p", null, this.props.content)
 		);
 	}
 });
 
-var FAQWidget = React.createClass({
+var FAQWidget = React.createClass({displayName: "FAQWidget",
 	getInitialState: function() {
 		return ({content: ""});
 	},
@@ -61,24 +61,24 @@ var FAQWidget = React.createClass({
 
 	render: function() {
 		return(
-			<div>
-				<ul>
-					<li><a onClick={this.handleClick.bind(this, "whatIs")} >What is BAB?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "whatDoes")}>What does BAB do?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "whenDoes")}>When does BAB meet?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "beginners")}>Does BAB accept beginners?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "isCoders")}>Is BAB just for coders?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "igrouply")}>What is iGrouply.com?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "howHelp")}>How can I help BAB?</a></li>
-					<li><a onClick={this.handleClick.bind(this, "canI")}>Can I host events and programs for BAB?</a></li>
+			React.createElement("div", null, 
+				React.createElement("ul", null, 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "whatIs")}, "What is BAB?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "whatDoes")}, "What does BAB do?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "whenDoes")}, "When does BAB meet?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "beginners")}, "Does BAB accept beginners?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "isCoders")}, "Is BAB just for coders?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "igrouply")}, "What is iGrouply.com?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "howHelp")}, "How can I help BAB?")), 
+					React.createElement("li", null, React.createElement("a", {onClick: this.handleClick.bind(this, "canI")}, "Can I host events and programs for BAB?"))
 
-				</ul>
+				), 
 
-				<DescriptionView content={this.state.content} />
-			</div>
+				React.createElement(DescriptionView, {content: this.state.content})
+			)
 		);
 	}
 
 })
 
-React.render(<FAQWidget />, document.getElementById("faqWidget"));
+React.render(React.createElement(FAQWidget, null), document.getElementById("faqWidget"));
