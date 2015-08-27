@@ -7,12 +7,13 @@ artists, are all are welcome to participate in the expression of humanity."
 var whatIs = "BAB is a community centered around helping people learn practical skills \
 and using them to create products and services. \
 \
-We welcome all skills levels and types of learners, whether you're a coder, graphic designer, or artist.\
- As long as you're interested in making mobile and web apps and want to create cool things, you're welcome."
-
+We welcome all skills levels and encourage bringing value to the people and communities around you.\
+\
+Coders, graphic designers, leaders, scientists, dancers, artists, are all are welcome to participate \
+in the expression of humanity.";
 var whatDoes = "BAB is a community that strives to help you towards your goals. We do this by \
-offering events (iOS workshops, Graphic Design workshops), mentorship, and opportunities (work days, socials, etc.) to meet people who can help guide you in the right \
-direction. Join our mailing list to stay updated with opportunities!";
+offering events, mentorship, and opportunities to meet people who can help guide you in the right \
+direction. Ask individual members what they're up to!";
 var whenDoes = "Join our mailing list and check our FB group for event reminders and details!"
 var beginners = "Absolutely. The only requirements are to be proactive, share generously, and \
 express yourself.";

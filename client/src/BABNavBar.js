@@ -57,7 +57,7 @@ var BABNavBarItems = React.createClass({
 
 });
 				//<li style={style3}><a href="/links">Links</a></li>
-
+				//Fun facts link: 
 
 var BABHeader = React.createClass({
 

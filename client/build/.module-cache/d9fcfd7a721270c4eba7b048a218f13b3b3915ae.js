@@ -11,7 +11,7 @@ We welcome all skills levels and types of learners, whether you're a coder, grap
  As long as you're interested in making mobile and web apps and want to create cool things, you're welcome."
 
 var whatDoes = "BAB is a community that strives to help you towards your goals. We do this by \
-offering events (iOS workshops, Graphic Design workshops), mentorship, and opportunities (work days, socials, etc.) to meet people who can help guide you in the right \
+offering events, mentorship, and opportunities to meet people who can help guide you in the right \
 direction. Join our mailing list to stay updated with opportunities!";
 var whenDoes = "Join our mailing list and check our FB group for event reminders and details!"
 var beginners = "Absolutely. The only requirements are to be proactive, share generously, and \
